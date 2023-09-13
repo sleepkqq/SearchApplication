@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="search_application@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.45">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>8.0.31</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="art_fusion"/>
+    <schema id="3" parent="1" name="employee_system"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="search_application">
+      <Current>1</Current>
+    </schema>
+    <schema id="8" parent="1" name="social_network"/>
+    <schema id="9" parent="1" name="tg-bot"/>
+  </database-model>
+</dataSource>
