@@ -27,7 +27,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
-    "react-toastify": "^9.1.3"
+    "react-toastify": "^9.1.3",
+    "sass": "^1.67.0"
   },
   "devDependencies": {
     "@lit-labs/react": "^1.1.0",
@@ -74,7 +75,9 @@
     "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
     "@hilla/react-form": "$@hilla/react-form",
     "axios": "$axios",
-    "bootstrap": "$bootstrap"
+    "bootstrap": "$bootstrap",
+    "react-toastify": "$react-toastify",
+    "sass": "$sass"
   },
   "vaadin": {
     "dependencies": {
@@ -115,6 +118,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "9d5c5591ecf5310d934b7c1c700b37bc68f243289b086988bfb66acca23f1bc5"
+    "hash": "40788490ab7ab5c67800a95c6e71e5dd7f27ecfcf9058907583ca841964848be"
   }
 }

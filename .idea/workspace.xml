@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0755bc30-3cf2-4d9c-9b0e-30ac1cb1cc49" name="Changes" comment="add search system with error notification if text is empty">
+    <list default="true" id="0755bc30-3cf2-4d9c-9b0e-30ac1cb1cc49" name="Changes" comment="custom html and css for search">
+      <change afterPath="$PROJECT_DIR$/frontend/views/AppBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/themes/todo/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/themes/todo/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/MainPageView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/MainPageView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/services/HelloWorldService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sleepkqq/application/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sleepkqq/application/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sleepkqq/application/services/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sleepkqq/application/service/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/themes/todo/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/themes/todo/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,8 @@
       <workItem from="1694643905247" duration="1032000" />
       <workItem from="1694644970222" duration="225000" />
       <workItem from="1694678504595" duration="3836000" />
-      <workItem from="1694688678944" duration="12350000" />
+      <workItem from="1694688678944" duration="13831000" />
+      <workItem from="1694718557291" duration="2014000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694633210531</created>
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694690745734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="custom html and css for search">
+      <created>1694703622057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694703622057</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +148,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="add search system with error notification if text is empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="add search system with error notification if text is empty" />
+    <MESSAGE value="custom html and css for search" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom html and css for search" />
   </component>
 </project>

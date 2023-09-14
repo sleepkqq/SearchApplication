@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .text-form {
@@ -28,6 +29,10 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+}
+
+.text-form::placeholder {
+  padding-left: 10px;
 }
 
 .text-form:focus {
@@ -65,4 +70,19 @@ li a:link {
 
 li a:visited {
   color: lightgray;
+}
+
+.app-bar {
+  background-color: darkcyan;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-bar-title {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
