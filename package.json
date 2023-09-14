@@ -19,12 +19,15 @@
     "@vaadin/bundles": "24.1.7",
     "@vaadin/common-frontend": "0.0.18",
     "@vaadin/router": "1.7.5",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.1",
     "classnames": "^2.3.2",
     "construct-style-sheets-polyfill": "3.1.0",
     "lit": "2.7.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2"
+    "react-router-dom": "^6.4.2",
+    "react-toastify": "^9.1.3"
   },
   "devDependencies": {
     "@lit-labs/react": "^1.1.0",
@@ -69,7 +72,9 @@
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
     "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
-    "@hilla/react-form": "$@hilla/react-form"
+    "@hilla/react-form": "$@hilla/react-form",
+    "axios": "$axios",
+    "bootstrap": "$bootstrap"
   },
   "vaadin": {
     "dependencies": {
@@ -110,6 +115,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "2a95f971ab36c5e79a2b54e6aab9fc3879eca30bb40c1dcb12d8d799a24367f8"
+    "hash": "9d5c5591ecf5310d934b7c1c700b37bc68f243289b086988bfb66acca23f1bc5"
   }
 }

@@ -10,7 +10,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="entityManagerFactory" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -34,16 +36,11 @@
     <orderEntry type="library" name="Maven: com.vaadin.servletdetector:throw-if-servlet3:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin.external.gwt:gwt-elemental:2.8.2.vaadin2" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin:flow-commons-upload:24.1.11" level="project" />
-    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.16.1" level="project" />
     <orderEntry type="library" name="Maven: com.helger:ph-css:7.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.helger.commons:ph-commons:11.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:9.5" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin.external:gentyref:1.2.0.vaadin1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.23.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.14" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.16" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.15" level="project" />
     <orderEntry type="library" name="Maven: dev.hilla:engine-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: dev.hilla:parser-jvm-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.classgraph:classgraph:4.8.162" level="project" />
@@ -184,5 +181,10 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:6.0.11" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:6.0.11" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:6.0.11" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.16.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.14" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.16" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.15" level="project" />
   </component>
 </module>
