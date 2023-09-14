@@ -1,4 +1,4 @@
 @NonNullApi
-package com.sleepkqq.application.services;
+package com.sleepkqq.application.service;
 
 import org.springframework.lang.NonNullApi;

@@ -16,23 +16,23 @@ import java.util.*;
 public class SearchController {
 
     @PostMapping("/search")
-    public Map<String, String> processText(@RequestBody String text) {
-        if (text.equals(""))
-            return new HashMap<>();
-        return someTextProcessingMethod(text);
+    public Map<String, String> processText(@RequestBody String query) {
+        return getTitlesWithHrefs(query);
     }
 
-    private static Map<String, String> someTextProcessingMethod(String text) {
+    private static Map<String, String> getTitlesWithHrefs(String query) {
         Map<String, String> resultList = new HashMap<>();
         try {
-            Document document = Jsoup.connect(String.format("https://www.google.com/search?q=%s", text.replaceAll(" ", "+"))).get();
+            Document document = Jsoup.connect(String.format("https://www.google.com/search?q=%s", query.replaceAll(" ", "+"))).get();
             Elements elements = document.select(".yuRUbf");
+
             for (Element element : elements) {
                 Element linkElement = element.select("a[jsname=UWckNb]").first();
                 Element title = element.select("h3[class=LC20lb MBeuO DKV0Md]").first();
                 if (title != null && linkElement != null)
                     resultList.put(title.text(), linkElement.attr("href"));
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }

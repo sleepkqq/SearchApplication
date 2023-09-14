@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { ToastContainer, toast } from 'react-toastify';
+import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'themes/todo/styles.scss';
 
 export function MainPageView() {
     const [inputText, setInputText] = useState('');
@@ -10,6 +10,13 @@ export function MainPageView() {
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInputText(e.target.value);
+    };
+
+    const handleKeyDown = (event: React.KeyboardEvent) => {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent the default Enter key behavior (e.g., form submission)
+            handleProcessText();
+        }
     };
 
     const handleProcessText = () => {
@@ -33,29 +40,24 @@ export function MainPageView() {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col-md-6">
-                    <div className="form-group">
-                        <input type="text" className="form-control" value={inputText} onChange={handleInputChange} />
-                    </div>
+        <div>
+            <div className="container">
+                <div className="search-form">
+                    <input type="text" className="text-form" value={inputText}
+                           onChange={handleInputChange} onKeyDown={handleKeyDown}
+                           placeholder="Type to search"/>
+                    <button className="button-form" onClick={handleProcessText}>Search</button>
                 </div>
-                <div className="col-md-3">
-                    <button className="btn btn-primary" onClick={handleProcessText}>Search</button>
-                </div>
+                <ul className="list-group">
+                    {Array.from(resultMap).map(([title, link], index) => (
+                        <li className="list-group-item" key={index}>
+                            <a href={link}>{title}</a>
+                        </li>
+                    ))}
+                </ul>
             </div>
-            <div className="row mt-3">
-                <div className="col-md-6">
-                    <ul className="list-group">
-                        {Array.from(resultMap).map(([title, link], index) => (
-                            <li className="list-group-item" key={index}>
-                                <a href={link}>{title}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-            <ToastContainer />
+            <ToastContainer/>
         </div>
-    );
+    )
+        ;
 }
